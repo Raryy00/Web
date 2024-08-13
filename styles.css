@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('https://www.insper.edu.br/wp-content/uploads/2023/04/Linguagen-de-programacao-2-shutterstock_1680857539.jpg.jpeg');
+    background-color: gray;
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
