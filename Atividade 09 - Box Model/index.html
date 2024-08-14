@@ -23,31 +23,29 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .noticia h1 {
-            color: #c4170c;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            margin: 8px;
-        }
-        
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-            
-        .imagem {
-            float: right;
-            width: 150px;
-            padding: 10px;
-        }
-        
-        .imagem-grande {
+        .imagem, .imagem-grande {
             width: 100%;
-            height: auto;
+            height: 150px;
+            object-fit: cover;
             padding: 10px 0; 
         }
 
         p {
             margin: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .lorem-ipsum {
+            clear: both;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -63,7 +61,7 @@
             <img class="imagem" src="imagem2.png" alt="Image Description">
             <p>Resumo</p>
         </div>
->
+
         <div class="noticia">
             <img class="imagem-grande" src="imagem3.png" alt="Large Image 1">
             <p>Resumo</p>
