@@ -1,30 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rarysson Guilherme e Thyago Luyz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Layout Flexível</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #61bd8c;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 10;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px; 
+            height: 1920px; 
+        }
+        .left, .center, .right {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .left {
+            background: pink; 
+            width: 100px;
+            height: 75%;
+            flex: 1 1 25%;
+        }
+        .center {
+            background: green; 
+            width: 100px;
+            height: 75%;
+            flex: 1 1 50%;
+        }
+        .right {
+            background: pink; 
+            width: 100px;
+            height: 75%;
+            flex: 1 1 25%;
+        }
+        .footer {
+            background: #61bd8c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>Rarysson Guilherme e Thyago Luyz</h1>
-    </header>
-    <nav>
-        <div class="nav-links">
-            <a href="Atividade 01 - Links">Atividade 01 - Links</a>
-            <a href="Atividade 02 - Mais Tags HTML">Atividade 02 - Mais Tags HTML</a>
-            <a href="Atividade 03 - Tabelas HTML">Atividade 03 - Tabelas HTML</a>
-            <a href="Atividade 04 - Formulários HTML">Atividade 04 - Formulários HTML</a>
-            <a href="Atividade 05 - JM Viagens">Atividade 05 - JM Viagens</a>
-            <a href="Atividade 06 - CSS">Atividade 06 - CSS</a>
-            <a href="Atividade 07 - Tag Div e Spam">Atividade 07 - Tag Div e Spam</a>
-            <a href="Atividade 08 - Familias e Fontes">Atividade 08 - Familias e Fontes</a>
-            <a href="Atividade 09 - Box Model">Atividade 09 - Box Model</a>
-        </div>
-    </nav>
+    <div class="header">Header</div>
+    <div class="content">
+        <div class="left">Esquerda</div>
+        <div class="center">Centro</div>
+        <div class="right">Direita</div>
+    </div>
+    <div class="footer">footer</div>
 </body>
-
 </html>
